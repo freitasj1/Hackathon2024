@@ -12,7 +12,7 @@ def generate_ecg(bpm, duration=10, fs=500):
     t = np.linspace(0, duration, int(fs * duration))  # Vetor de tempo
     heart_rate = bpm / 60  # Hz (frequência cardíaca)
     
-    # Simulando um sinal de ECG simples (seno modulado)
+    
     ecg = np.sin(2 * np.pi * heart_rate * t) + 0.5 * np.sin(4 * np.pi * heart_rate * t)
     ecg += 0.1 * np.random.normal(size=len(t))  # Adicionando ruído
     
