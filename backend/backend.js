@@ -74,7 +74,7 @@ app.get('/ecg/:variavel', (req, res) => {
     });
 });
 
-// Rota para verificar os 2 últimos valores e retornar resultado
+
 app.get('/verificar', (req, res) => {
     // Consulta os últimos 2 valores de cada tabela
     console.log('Consultando valores ECG e IA')
